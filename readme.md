@@ -12,3 +12,9 @@ Es posible implementar un balanceador de carga, como **Nginx**, para:
 
 - **Escalar**: Crear réplicas de contenedores durante picos de demanda.
 - **Optimizar recursos**: Reducir réplicas cuando la demanda disminuye.
+
+# Arquitectura del ejemplo:
+
+- **Backend**: Una aplicación web simple en Node.js.
+- **Nginx**: Actuará como balanceador de carga, distribuyendo las solicitudes a varias réplicas del backend.
+- **Docker Compose**: Orquestará el entorno.
